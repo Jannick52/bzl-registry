@@ -1,0 +1,7 @@
+{
+    "type": "git_repository",
+    "remote": "https://github.com/Jannick52/3rd-party-libs",
+    "commit": "4b9cf3033a35dd3a9a3b5bf578f57c0d07496cf6",
+    "strip_prefix": "mavsdk",
+    "verbose": "true"
+}

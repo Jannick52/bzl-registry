@@ -1,0 +1,12 @@
+module(name = "wrapper-mavsdk", version = "1.0.0")
+
+bazel_dep(name = "rules_foreign_cc", version = "0.10.1")
+
+http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "mavsdk",
+    url = "https://github.com/mavlink/MAVSDK/archive/refs/tags/v2.10.0.tar.gz",
+    build_file = ":BUILD.bazel",
+    strip_prefix = "MAVSDK-2.10.0",
+)
